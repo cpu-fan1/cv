@@ -1,74 +1,94 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Maxim CV</title>
-</head>
-<body>
-    <table cellspacing="15">
-        <tr>
-            <td> <img src="20230815_210440.jpg" width="200"></td>
-            <td><h1>Максим Рубцов</h1>
-                <p><em>Я ведущий инженер-конструктор государсвенной корпорации <strong>Росатом</strong></em></p>
-                <p>Люблю собирать компьютеры и проводить время с семьей</p></td>
-        </tr>
-    </table>
-   
-    
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="rubtsov, maxim, resume, CV, summary" />
+    <meta name="description" content="Сайт-резюме Рубцова Максима" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rubtsov Maxim CV</title>
+  </head>
+  <body>
+    <div class="info">
+      <img src="imgs/20210522_175306.jpg" alt="profile foto" />
+      <div class="info-text">
+        <h1>Рубцов Максим Сергеевич</h1>
+        <p>
+          Я ведущий инженер-конструктор с 10-летним опытом работы в структурах
+          <strong>Росатома</strong>.
+        </p>
+        <p>
+          Я увлекаюсь <em>компьютерами</em> и <em>web-разработкой</em>. Люблю
+          проводить время с <em>семьей</em>.
+        </p>
+        <h4>Список социальных сетей</h4>
+        <a href="https://vk.com/id82906503">Vk</a> |
+        <a href="https://t.me/@Long_johnson">Telegram</a>
+      </div>
+    </div>
+    <div class="card bg-green">
+      <h3>Мои хобби</h3>
+      <ul class="list">
+        <li>Сборки ПК</li>
+        <li>Пайка</li>
+        <li>Ремонт техники</li>
+        <li>Путешествия</li>
+        <li>Чтение книг</li>
+      </ul>
+    </div>
+    <div class="card bg-red">
+      <h3>Опыт работы</h3>
+      <table class="table">
+        <thead>
+          <th>Название организации</th>
+          <th>Должность</th>
+          <th>Период</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Эспар-аналитик"</td>
+            <td>Инспектор наружной рекламы</td>
+            <td>2010 - 2020</td>
+          </tr>
+          <tr>
+            <td>АО "Красная Звезда"</td>
+            <td>Инженер-конструктор</td>
+            <td>2013 - 2021</td>
+          </tr>
+          <tr>
+            <td>АО "НИКИЭТ"</td>
+            <td>Ведущий инженер-конструктор</td>
+            <td>2021 - по н.вр.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <hr>
+    <form action="/" class="form">
 
-    <h2>social media</h2>
-    <ul type="square">
-        <li>google mail</li>
-        <li> youtube </li>
-        <li><a href="https://web.telegram.org/" target="_blank">telegram</a></li>
-    </ul>
-    <hr>
-    <h2>Hobby</h2>
-    <ol type="I">
-        <li>travel</li>
-        <li>bycicle</li>
-    </ol>
-    <hr>
+      <h3>Связаться со мной</h3>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="text">Ваше имя:</label>
+          <input type="text" placeholder="Введите имя" />
+        </div>
+        <div class="form-group">
+          <label for="email">Ваш e-mail</label>
+          <input type="email" placeholder="Введите e-mail" />
+        </div>
+      </div>
 
-    <h2>work experience</h2>
-    <table border="2">
-        <tr>
-            <th>workplace</th>
-            <th>work type</th>
-            <th>years</th>
-        </tr>
-        <tr>
-            <td>kiti cafe</td>
-            <td>hookah master</td>
-            <td>2012-2013</td>
-        </tr>
-        <tr>
-            <td>advertisiment foto</td>
-            <td>image manager</td>
-            <td>2011-2021</td>
-        </tr>
-    </table>
-
-    <hr size="5">
-
-    <h2>youtube course</h2>
-    <a href="youtube.html">view list</a>
-    
-    <hr>
-
-    <h2>call me</h2>
-    <form action="">
-        <label for="name">your name:</label>
-        <input type="text" id="name" placeholder="type name">
-        <br>
-
-        <label for="email">your e-mail:</label>
-        <input type="text" id="email" placeholder="type e-mail">
-        <br>
-        <input type="submit" value="call!">
+      <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Введите сообщение"
+        ></textarea>
+      </div>
+      <input class="btn" type="submit" />
     </form>
-
-</body>
+  </body>
 </html>
